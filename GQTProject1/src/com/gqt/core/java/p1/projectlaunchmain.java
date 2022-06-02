@@ -104,16 +104,16 @@ class electronics{
 		st =scan.next();
 		if (st.equalsIgnoreCase("y")) {
 			System.out.println("MAKE PAYMENT");
-			paymentStatus();
+//			paymentStatus();
 			}
 		else {
 			System.out.println("EXIT");
 		}
 			}
-	void paymentStatus() {
-		System.out.println("PAYMENT DONE");
-		System.out.println("YOU PURCHASED "+elec_choice);
-	}
+//	void paymentStatus() {
+//		System.out.println("PAYMENT DONE");
+//		System.out.println("YOU PURCHASED "+elec_choice);
+//	}
 }
 class clothing{
 	int clo_choice=0;
