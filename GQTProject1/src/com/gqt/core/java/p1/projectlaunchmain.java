@@ -81,6 +81,7 @@ class electronics{
 		}
 	void choice() {
 		System.out.println("ENTER YOUR CHOICE:");
+		@SuppressWarnings("resource")
 		Scanner sc = new Scanner (System.in);
 		int elec_choice = sc.nextInt();
 		if (elec_choice==1) {
@@ -104,29 +105,29 @@ class electronics{
 		st =scan.next();
 		if (st.equalsIgnoreCase("y")) {
 			System.out.println("MAKE PAYMENT");
-//			paymentStatus();
+		paymentStatus();
 			}
 		else {
 			System.out.println("EXIT");
 		}
 			}
-//	void paymentStatus() {
-//		System.out.println("PAYMENT DONE");
-//		System.out.println("YOU PURCHASED "+elec_choice);
-//	}
+	void paymentStatus() {
+		System.out.println("PAYMENT DONE");
+		System.out.println("YOU PURCHASED "+elec_choice);
+	}
 }
 class clothing{
 	int clo_choice=0;
 	private String st;
 	void list() {
 		System.out.println("1.JACKETS 2.SWEAT-SHIRTS 3.TRACK-PANTS");
-		choice();
+		int clo_choice;
+		if (clo_choice==1) {
 		}
 	void choice() {
-		System.out.println("ENTER YOUR CHOICE:");
+		System.out.println("ENTER YOUR CHOICE:")
 		Scanner sc = new Scanner (System.in);
 		int clo_choice = sc.nextInt();
-		if (clo_choice==1) {
 			System.out.println("JACKETS DETAILS:");
 			System.out.println("LEATHER  BROWN  UNISEX");
 		}
